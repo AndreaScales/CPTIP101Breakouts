@@ -69,4 +69,41 @@ def get_evens(lst):
 lst = [1,2,3,4]
 evens_lst = get_evens(lst)
 print(evens_lst)
+
 #Problem #8, Multiples of Five
+def multiples_of_five():
+    for list in range(5,105,5):
+        print(list)
+
+print(multiples_of_five())
+#Problem #9, find Divisors
+def find_divisors(n):
+    i = []
+    for d in range(1,n+1):
+        if n % d == 0:
+            i.append(d)
+    return i
+
+lst = find_divisors(6)
+print(lst)
+
+#Problem #10, FizzBuzz
+def fizzbuzz(n):
+    i = []
+    for n in range(1, n + 1):
+        if n % 3 == 0:
+            print ("Fizz")
+        elif n % 5 == 0:
+            print ("Buzz")
+        else:
+            print(n)
+
+fizzbuzz(13)
+
+#Problem #11, Print the Index
+def print_indices(lst):
+    pass
+
+#Problem #12, Linear Search
+def linear_search(lst, target):
+    pass
