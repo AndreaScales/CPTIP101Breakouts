@@ -102,8 +102,19 @@ fizzbuzz(13)
 
 #Problem #11, Print the Index
 def print_indices(lst):
-    pass
+    for i in range(len(lst)):
+        print(i)
+
+lst = [5,1,3,8,2]
+print_indices(lst)
 
 #Problem #12, Linear Search
 def linear_search(lst, target):
-    pass
+    for i in range(len(lst)):
+        if lst[i] == target:
+            return i
+    return -1
+
+lst = [1,4,5,2,8]
+position = linear_search(lst,5)
+print(position)
